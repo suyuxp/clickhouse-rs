@@ -15,7 +15,7 @@ use native_tls::TlsConnector;
 #[cfg(feature = "tokio_io")]
 use tokio::net::TcpStream;
 #[cfg(feature = "async_std")]
-use async_std::net::TcpStream;
+use async_std::net::TcpStream as AsyncTcpStream;
 
 use pin_project::pin_project;
 use url::Url;
