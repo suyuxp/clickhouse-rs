@@ -14,7 +14,7 @@ use tokio_tls::TlsStream;
 use tokio::prelude::*;
 use pin_project::pin_project;
 #[cfg(feature = "async_std")]
-use async_std::net::TcpStream;
+use async_std::net::TcpStream as AsyncTcpStream;
 #[cfg(feature = "async_std")]
 use async_std::io::prelude::*;
 
